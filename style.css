@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+ul.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+video, .img-tesla {
+    width: 100vw; 
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.logo {
+    filter: invert(1) brightness(10);
+    position: fixed;
+    width: 120px;
+    top: 20px;
+    left: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.sub-titulo {
+    color: white;
+}
+
+.info-carro {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.rodape {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 7px 80px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(34, 34, 34, 1);
+    transition: background-color 0.3s;
+}
+
+.test-drive {
+    color: black;
+    background-color: white;
+}
+
+.texto-rodape {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.formulario {
+    position: fixed;
+    top: 40px;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -200%;
+    transition: 1.5s;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .info-carro {
+        margin-top: 40px;
+    }
+
+    .rodape button {
+        padding: 5px 40px;
+    }
+
+    .formulario {
+        width: 100%;
+        height: 80%;
+        top: 10%;
+    }
+}

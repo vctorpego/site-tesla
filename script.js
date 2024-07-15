@@ -1,9 +1,9 @@
-let formulario = document.querySelector(".formulario")
+let formulario = document.querySelector(".container");
 
-function aparecerFormulario(){
-    formulario.style.left = "200%"
+function aparecerFormulario() {
+    formulario.style.display = "flex";
 }
 
-function desaparecerFormulario(){
-    formulario.style.left = "-200%"
+function desaparecerFormulario() {
+    formulario.style.display = "none";
 }
